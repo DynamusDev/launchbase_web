@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { Flex } from '../components/UI/Flex';
 
 export default function Home() {
-  const batata = '';
   return (
     <div className={styles.container}>
       <Head>
