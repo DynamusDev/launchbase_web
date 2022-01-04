@@ -51,6 +51,7 @@
     "jest-dom": "^4.0.0",
     "jest-mock": "^27.4.2",
     "lint-staged": "^12.1.4",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4"
@@ -63,7 +64,7 @@
   "lint-staged": {
     "**/*.+(js|jsx|json|ts|tsx)": [
       "prettier --write",
-      "CI=true npm run test"
+      "CI=true yarn test"
     ]
   }
 }
