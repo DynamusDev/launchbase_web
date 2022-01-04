@@ -16,6 +16,7 @@ module.exports = {
     "!src/**/_app.tsx",
     "!src/**/_document.tsx"
   ],
-  coverageReporters: ["json", "lcov"],
+  coverageReporters: ["json", "lcov", "text"],
   testEnvironment: 'jsdom',
+  modulePathIgnorePatterns: ["<rootDir>/src/components/UI", "<rootDir>/src/context"]
 };

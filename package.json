@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "test": "jest --coverage --watchAll=false",
+    "test": "jest --coverage",
     "format:check": "prettier --check 'src/**/*.{ts, tsx}'"
   },
   "dependencies": {
