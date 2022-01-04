@@ -12,6 +12,8 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*.tsx",
+    "src/helpers/*.ts",
+    "src/helpers/*.tsx",
     "!src/**/*.spec.{tsx}",
     "!src/**/_app.tsx",
     "!src/**/_document.tsx"
