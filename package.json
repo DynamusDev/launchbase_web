@@ -63,7 +63,7 @@
   "lint-staged": {
     "**/*.+(js|jsx|json|ts|tsx)": [
       "prettier --write",
-      "jest --findRelatedTests"
+      "CI=true npm run test"
     ]
   }
 }
