@@ -1,8 +1,6 @@
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Home from '../index';
 import { getByTextContent } from '../../tests/testMatch';
-
-const pushMock = jest.fn();
 
 describe('Home screen', () => {
   it('renders home page', () => {
