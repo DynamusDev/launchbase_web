@@ -7,7 +7,9 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "test": "jest --coverage"
+    "test": "jest --coverage --watchAll=false",
+    "format:check": "prettier --check 'src/**/*.{ts, tsx}'",
+    "lint:check": "eslint --ext js,ts,tsx src"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
@@ -64,7 +66,7 @@
   "lint-staged": {
     "**/*.+(js|jsx|json|ts|tsx)": [
       "prettier --write",
-      "CI=true yarn test"
+      "yarn format:check && yarn lint:check"
     ]
   }
 }
