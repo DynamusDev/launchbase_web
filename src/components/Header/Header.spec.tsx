@@ -11,6 +11,6 @@ describe('Header conmponent', () => {
   it('renders with a custom title', () => {
     render(<Header title={'Código Preto'} />);
 
-    expect(screen.getByText('Código Preto')).toBeInTheDocument();
+    expect(screen.getByText('Código')).toBeInTheDocument();
   });
 });
