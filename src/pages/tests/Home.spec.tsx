@@ -10,24 +10,28 @@ describe('Home screen', () => {
     expect(
       getByTextContent('Get started by editing pages/index.js')
     ).toBeInTheDocument();
+
     expect(screen.getByText('Documentation →')).toBeInTheDocument();
     expect(
       screen.getByText(
         'Find in-depth information about Next.js features and API.'
       )
     ).toBeInTheDocument();
+
     expect(screen.getByText('Learn →')).toBeInTheDocument();
     expect(
       screen.getByText(
         'Learn about Next.js in an interactive course with quizzes!'
       )
     ).toBeInTheDocument();
+
     expect(screen.getByText('Examples →')).toBeInTheDocument();
     expect(
       screen.getByText(
         'Discover and deploy boilerplate example Next.js projects.'
       )
     ).toBeInTheDocument();
+
     expect(screen.getByText('Deploy →')).toBeInTheDocument();
     expect(
       screen.getByText(
